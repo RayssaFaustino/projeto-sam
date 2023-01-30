@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    max-width: 600px;
+    height: 100%;
+    background-color: lightgray;
+}
+
+header {
+    background-image: url(../images/img-abertura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.76);
+}
+
+.texto-header h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.808);
+    width: 100vw;
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 150px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    
+}
+
+#recep {
+    /* background-color: blue; */
+    background-image: url(../images/fundo-recep.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    display: flex;
+    
+}
+
+.texto-recep {
+    text-align: center;
+    word-spacing: 1px;
+    width: 350px;
+    padding-top: 40px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    padding-bottom: 120px;
+    margin: auto;
+}
+
+.texto-recep h2  {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-bottom: 8px;
+}
+
+.texto-recep p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+
+#fotos-1 {
+    background-color: white;
+    max-height: 1220px;
+    width: 100vw;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fotos-1 img {
+    padding: 10px;
+}
+
+#texto-1 {
+    background-color: rgba(0, 0, 0, 0.808) ;
+    height: 300px;
+    width: 100vw;
+}
+
+.texto-1 p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+    margin: auto;
+    width: 450px;
+    padding-top: 80px;
+    color: white;
+}
+
+
+
+/*SLIDES*/
+
+#fotos-2 {
+    max-width: 600px;
+}
+
+#fotos-2 {
+    height: 385px;
+    width: 485px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fotos-2 {
+    text-align: center;
+}
+
+
+
+.slides img {
+    width: 100vw;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+
+}
+
+.bar {
+    width: 30px;
+    height: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+.bar:hover {
+    background-color: gray;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+} 
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+#versiculo {
+    width: 100vw;
+}
+
+.versiculo {
+    background-color: gray;
+    height: 370px;
+    width: 370px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+}
+
+.versiculo p {
+    color: black;
+    font-weight: 300;
+    padding-top: 6%;
+    margin: auto;
+    text-align: center;
+    width: 270px;
+    font-size: 18px;
+}
+
+/*fim*/
+
+#recado-1 {
+    background-color: rgba(0, 0, 0, 0.808);
+    width: 100vw;
+    height: 250px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#recado-1 h4 {
+    color: white;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#recado-1 p {
+    margin: auto;
+    width: 400px;
+    font-size: 18px;
+    color: gray;
+}
+
+#montagem-fotos {
+    width: 100vw;
+}
+
+.montagem-fotos {
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#poema {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+}
+
+.poema {
+    background-image: url(../images/fundo-poema.jpeg);
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 100vw;
+    height: 440px;
+    
+}
+
+
+.poema h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 15%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.poema p {
+    margin: auto;
+    width: 430px;
+    font-weight: 100;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+#recado-2 {
+    margin-top: 140px;
+    background-color: rgba(0, 0, 0, 0.808);
+    width: 100vw;
+    height: 150px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#recado-2 h4 {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#recado-2 p {
+    margin: auto;
+    width: 400px;
+    font-size: 18px;
+    color: gray;
+}
+
+#msg-meninas {
+    width: 100vw;
+}
+
+.msg-meninas {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#final {
+    background-color: rgba(255, 255, 255, 0.438);
+    width: 100vw;
+    height: 180px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.final {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+}
+
+.final h4 {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.final p {
+    color: gray;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
