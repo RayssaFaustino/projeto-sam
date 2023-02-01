@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    max-width: 600px;
+    max-width: 100%;
     height: 100%;
     background-color: lightgray;
 }
@@ -105,7 +105,7 @@ header {
     font-size: 22px;
     text-align: center;
     margin: auto;
-    width: 450px;
+    max-width: 800px;
     padding-top: 80px;
     color: white;
 }
@@ -116,13 +116,17 @@ header {
 
 #fotos-2 {
     max-width: 600px;
+    overflow: hidden;
 }
 
 #fotos-2 {
     height: 385px;
-    width: 485px;
+    max-width: 485px;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 30px auto;
 }
 
 .fotos-2 {
@@ -132,7 +136,7 @@ header {
 
 
 .slides img {
-    width: 100vw;
+    width: 100%;
 }
 
 .navigation {
@@ -167,6 +171,10 @@ input {
     display: flex;
     width: 500%;
     height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .slide {
@@ -200,11 +208,12 @@ input {
 
 .versiculo {
     background-color: gray;
-    height: 370px;
-    width: 370px;
+   height: 360px;
+    width: 360px;
     border-radius: 100%;
+    padding: 20px;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 450px;
     margin-bottom: 5%;
     display: flex;
 }
@@ -215,7 +224,7 @@ input {
     padding-top: 6%;
     margin: auto;
     text-align: center;
-    width: 270px;
+    max-width: 800px;
     font-size: 18px;
 }
 
@@ -239,21 +248,31 @@ input {
 
 #recado-1 p {
     margin: auto;
-    width: 400px;
+    max-width: 800px;
     font-size: 18px;
     color: gray;
 }
 
 #montagem-fotos {
-    width: 100vw;
+    width: 100%;
 }
 
 .montagem-fotos {
-    width: 420px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+.montagem-fotos img,
+.montagem-fotos source{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
 }
 
 #poema {
@@ -283,7 +302,7 @@ input {
 
 .poema p {
     margin: auto;
-    width: 430px;
+    max-width: 800px;
     font-weight: 100;
     font-size: 17px;
     letter-spacing: 1px;
@@ -310,7 +329,7 @@ input {
 
 #recado-2 p {
     margin: auto;
-    width: 400px;
+    max-width: 800px;
     font-size: 18px;
     color: gray;
 }
@@ -320,11 +339,21 @@ input {
 }
 
 .msg-meninas {
-    width: 450px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+.msg-meninas img,
+.msg-meninas source{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
 }
 
 #final {
@@ -336,7 +365,7 @@ input {
 }
 
 .final {
-    width: 400px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 5%;
