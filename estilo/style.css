@@ -208,23 +208,25 @@ input {
 
 .versiculo {
     background-color: gray;
-   height: 360px;
+    height: 360px;
     width: 360px;
     border-radius: 100%;
     padding: 30px;
     margin: auto;
     margin-top: 450px;
+    margin-bottom: 50px;
     display: flex;
 }
 
 .versiculo p {
     color: black;
     font-weight: 300;
-    padding-top: 6%;
+    padding-top: 20px;
     margin: auto;
     text-align: center;
     max-width: 800px;
     font-size: 18px;
+    width: 300px;
 }
 
 /*fim*/
@@ -250,6 +252,7 @@ input {
     max-width: 800px;
     font-size: 18px;
     color: gray;
+    padding: 15px;
 }
 
 #montagem-fotos {
@@ -306,6 +309,7 @@ input {
     font-size: 17px;
     letter-spacing: 1px;
     line-height: 22px;
+    padding: 15px;
 }
 
 #recado-2 {
@@ -331,6 +335,7 @@ input {
     max-width: 800px;
     font-size: 18px;
     color: gray;
+    padding: 15px;
 }
 
 #msg-meninas {
@@ -382,5 +387,6 @@ input {
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
+    padding: 15px;
 }
 
